@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "5a0beba4-3f16-4ec0-bf4e-95895420bf1f",
+		"name": "STUDY_MONGO_CONSOLE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14781276"
+	},
+	"item": [
+		{
+			"name": "POST_add_fakes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/processes?tasks=20&subTasks=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"processes"
+					],
+					"query": [
+						{
+							"key": "tasks",
+							"value": "20"
+						},
+						{
+							"key": "subTasks",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_all_tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
